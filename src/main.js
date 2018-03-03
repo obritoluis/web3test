@@ -6,6 +6,7 @@ import Vuetify from 'vuetify'
 import Web3 from 'web3'
 
 import App from './App'
+import KeyStoreAuthForm from './components/KeyStoreAuthForm'
 import router from './router'
 import store from './store'
 
@@ -14,6 +15,8 @@ window.Web3 = Web3
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false
+
+Vue.component('KeyStoreAuthForm', KeyStoreAuthForm)
 
 /* eslint-disable no-new */
 new Vue({

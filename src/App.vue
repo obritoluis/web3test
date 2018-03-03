@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <KeyStoreAuthForm></KeyStoreAuthForm>
     <router-view/>
   </div>
 </template>
