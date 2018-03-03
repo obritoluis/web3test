@@ -1,23 +1,26 @@
 <template>
-  <div id="app">
-    <KeyStoreAuthForm></KeyStoreAuthForm>
+  <v-app id="app">
+    <v-layout justify-center>
+      <v-flex xs12 sm8 md6 lg4>
+        <v-card>
+          <v-card-text>
+            <KeyStoreAuthForm></KeyStoreAuthForm>
+          </v-card-text>
+        </v-card>
+      </v-flex>
+    </v-layout>
+
     <router-view/>
-  </div>
+  </v-app>
 </template>
 
 <script>
+import KeyStoreAuthForm from '@/components/KeyStoreAuthForm.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    'KeyStoreAuthForm': KeyStoreAuthForm
+  }
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
